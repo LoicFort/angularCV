@@ -1,0 +1,17 @@
+@use "../../shared/utils.scss";
+
+:host {
+  @include utils.flex-center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+  :host {
+    @include utils.flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tile {
+    margin: 1rem;
+  }
+}

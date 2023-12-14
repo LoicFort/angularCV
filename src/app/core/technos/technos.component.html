@@ -1,0 +1,11 @@
+<div class="techno" *ngFor="let techno of technos">
+  <div class="techno__title">{{ techno.title }}</div>
+  <div class="techno__container">
+    <mat-progress-bar
+      class="techno__container__progress-bar"
+      mode="determinate"
+      [value]="techno.level"
+    ></mat-progress-bar>
+  </div>
+  <div class="techno__value">{{ techno.level + "%" }}</div>
+</div>

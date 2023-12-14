@@ -1,0 +1,13 @@
+@use '../../shared/utils.scss';
+
+.tile{
+  @include utils.flex-center;
+  flex-direction: column;
+  width: 180px;
+  background-color: #D5FFF3;
+  border-radius: 39% 61% 66% 34% / 30% 30% 70% 70% ; 
+  &__p {
+    text-wrap: wrap;
+    text-align: center;
+  }
+}

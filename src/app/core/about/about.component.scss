@@ -1,0 +1,25 @@
+@use "../../shared/utils";
+
+:host {
+  @include utils.flex-column; 
+  .about {
+    &__title {
+      @include utils.flex-center;
+      margin-bottom: 3rem;
+    }
+    &__tiles {
+      margin-bottom: 3rem;
+    }
+    &__presentation {
+      @include utils.flex-center;
+      @include utils.flex-column;
+      margin-bottom: 3rem;
+    }
+    &__technos {
+      margin: auto;
+      width: 50%;
+      font-size: larger;
+      margin-bottom: 3rem;
+    }
+  }
+}

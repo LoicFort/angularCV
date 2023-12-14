@@ -1,0 +1,10 @@
+@use "../../shared/utils.scss";
+
+:host {
+  @include utils.flex-column;
+  .contact {
+    &__title {
+      @include utils.flex-center;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@use "../../shared/utils";
+
+.presentation {
+  &__p-container {
+    width: 50%;
+    @include utils.flex-center;
+    &__p {
+      margin: 0.2rem;
+    }
+  }
+}
