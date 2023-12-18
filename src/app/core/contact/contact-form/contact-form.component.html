@@ -1,17 +1,17 @@
 <form class="contact-form" [formGroup]="contactForm">
   <mat-form-field>
-    <mat-label>Name</mat-label>
-    <input matInput formControlName="name" />
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Enter your email</mat-label>
-    <input matInput placeholder="pat@example.com" formControlName="mail" />
-  </mat-form-field>
-  <mat-form-field>
     <mat-label>Message</mat-label>
-    <textarea matInput formControlName="message"></textarea>
+    <textarea class="contact-form__input" matInput></textarea>
   </mat-form-field>
-  <button class="btn btn--stripe" type="submit" (click)="submit()">
-    Let's go!
-  </button>
+  <div class="contact-form__container">
+    <a href="http://www.google.com" mat-menu-item>
+      <button
+        class="button button--stripe"
+        type="submit"
+        [disabled]="!contactForm.valid"
+      >
+        Let's Go!
+      </button>
+    </a>
+  </div>
 </form>

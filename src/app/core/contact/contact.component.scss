@@ -2,9 +2,15 @@
 
 :host {
   @include utils.flex-column;
+  position: relative;
   .contact {
     &__title {
       @include utils.flex-center;
+    }
+    &__form {
+      position: absolute;
+      top: 25%;
+      left: 25%;
     }
   }
 }

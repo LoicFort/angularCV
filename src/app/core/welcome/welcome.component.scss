@@ -14,9 +14,17 @@
   );   
 }
 
+.welcome{
+    &__navbar {
+        position:sticky;
+        top:0;
+    }
+}
+
 h1 {
   font-family: 'Silkscreen', sans-serif;
   text-align: center;
+  font-size: 3rem;
 }
 
 

@@ -10,4 +10,10 @@
     text-wrap: wrap;
     text-align: center;
   }
+  &__icon {
+    @include utils.flex-center;
+    font-size: 3rem;
+    width: 45px;
+    height: 45px;
+  }
 }
